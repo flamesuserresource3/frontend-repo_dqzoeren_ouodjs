@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative h-[80vh] sm:h-[85vh] lg:h-[90vh] w-full overflow-hidden">
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/LU2mWMPbF3Qi1Qxh/scene.splinecode"
+          scene="https://prod.spline.design/ezRAY9QD27kiJcur/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
@@ -21,9 +21,11 @@ export default function Hero() {
           <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-br from-gray-900 to-gray-700 bg-clip-text text-transparent">
             Connectify
           </h1>
-          <p className="mt-4 text-lg text-gray-700">
-            Turn your live web app into premium Android and iOS apps with offline support, push notifications, and instant updates — all wrapped in a smooth, native shell.
-          </p>
+          <div className="mt-4 text-lg text-gray-700 space-y-2">
+            <p>In a world full of endless scrolling, Connectify brings connection back to reality.</p>
+            <p>Scan, tag, and discover people around you who matter.</p>
+            <p>It’s time to make networking human again — fast, simple, and real.</p>
+          </div>
           <div className="mt-6 flex flex-col sm:flex-row gap-3">
             <a
               href="https://connectify111.base44.app"
