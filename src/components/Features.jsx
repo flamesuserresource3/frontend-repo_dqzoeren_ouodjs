@@ -1,74 +1,73 @@
-import { Rocket, Wifi, Bell, Download, Shield, Smartphone, RefreshCw, Share2, Cloud } from 'lucide-react';
+import { Smartphone, RefreshCw, Wifi, Bell, Shield, Download, Share2, Cloud, Rocket } from "lucide-react";
 
 const features = [
   {
-    title: 'Native feel, web speed',
-    desc: 'Your site runs inside a refined shell with smooth transitions and gestures.',
-    Icon: Smartphone,
+    title: "Mobile-first UI",
+    description: "Feels native on every device with smooth gestures and polished details.",
+    icon: Smartphone,
   },
   {
-    title: 'Instant updates',
-    desc: 'Ship changes to the web and the app reflects them automatically.',
-    Icon: RefreshCw,
+    title: "Instant updates",
+    description: "Ship changes from the web — no app store wait required.",
+    icon: RefreshCw,
   },
   {
-    title: 'Offline support',
-    desc: 'Cache essential pages to keep users going without internet.',
-    Icon: Wifi,
+    title: "Works offline",
+    description: "Reliable caching keeps things running even without signal.",
+    icon: Wifi,
   },
   {
-    title: 'Push notifications',
-    desc: 'Re-engage users with timely, targeted messages.',
-    Icon: Bell,
+    title: "Push notifications",
+    description: "Keep your audience in the loop at the right moment.",
+    icon: Bell,
   },
   {
-    title: 'Secure by default',
-    desc: 'Hardened network layer and safe permissions.',
-    Icon: Shield,
+    title: "Secure by design",
+    description: "Best practices and permissions that respect privacy.",
+    icon: Shield,
   },
   {
-    title: 'Auto preloading',
-    desc: 'Smart caching keeps the experience snappy.',
-    Icon: Download,
+    title: "Fast downloads",
+    description: "Small bundles and edge delivery for snappy loads.",
+    icon: Download,
   },
   {
-    title: 'Share anything',
-    desc: 'System share sheets for links and content.',
-    Icon: Share2,
+    title: "Easy sharing",
+    description: "Deep links that open exactly where users need to be.",
+    icon: Share2,
   },
   {
-    title: 'Cloud-friendly',
-    desc: 'Optimized for modern hosting and CDNs.',
-    Icon: Cloud,
+    title: "Cloud sync",
+    description: "Seamlessly sync data across devices and platforms.",
+    icon: Cloud,
   },
   {
-    title: 'Performance-first',
-    desc: 'Built with best practices for speed and polish.',
-    Icon: Rocket,
+    title: "Launch ready",
+    description: "Optimized foundations for Play Store and App Store.",
+    icon: Rocket,
   },
 ];
 
 export default function Features() {
   return (
-    <section id="features" className="relative py-20 bg-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900">
-            Everything you need for a premium mobile app
-          </h2>
-          <p className="mt-3 text-gray-600">
-            Wrap your web experience with native capabilities while keeping the agility of the web.
+    <section id="features" className="relative w-full py-20 sm:py-28 bg-gradient-to-b from-white to-slate-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="max-w-2xl">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Everything you need to go mobile</h2>
+          <p className="mt-3 text-gray-700">
+            Upgrade your web app to a native-like experience with offline support,
+            live updates, notifications, and branded visuals.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map(({ title, desc, Icon }) => (
-            <div key={title} className="group rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition">
-              <div className="h-11 w-11 rounded-lg bg-gradient-to-br from-fuchsia-500 to-indigo-500 text-white flex items-center justify-center shadow-md shadow-fuchsia-500/20">
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {features.map(({ title, description, icon: Icon }) => (
+            <div key={title} className="group rounded-2xl border border-black/10 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-violet-500 to-fuchsia-500 text-white flex items-center justify-center shadow-sm">
                 <Icon className="h-5 w-5" />
               </div>
               <h3 className="mt-4 text-lg font-semibold text-gray-900">{title}</h3>
-              <p className="mt-1 text-sm text-gray-600">{desc}</p>
+              <p className="mt-2 text-gray-700 text-sm leading-relaxed">{description}</p>
             </div>
           ))}
         </div>

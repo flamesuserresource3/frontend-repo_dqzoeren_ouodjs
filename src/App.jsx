@@ -1,9 +1,9 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import Footer from './components/Footer';
+import Header from "./components/Header.jsx";
+import Hero from "./components/Hero.jsx";
+import Features from "./components/Features.jsx";
+import Footer from "./components/Footer.jsx";
 
-function App() {
+export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
       <Header />
@@ -15,5 +15,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
