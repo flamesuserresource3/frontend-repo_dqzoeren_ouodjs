@@ -6,10 +6,10 @@ export default function Hero() {
       {/* Background layer: soft radial gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(40%_60%_at_50%_10%,#eef2ff_0%,#f8fafc_30%,#ffffff_65%)]" />
 
-      {/* 3D Spline scene */}
+      {/* 3D Spline scene (full-width cover background) */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/WCoEDSwacOpKBjaC/scene.splinecode"
+          scene="https://prod.spline.design/pZWHhXqbwV-KfY5J/scene.splinecode"
           style={{ width: "100%", height: "100%" }}
         />
       </div>
